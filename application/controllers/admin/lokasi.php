@@ -24,15 +24,13 @@ class lokasi extends Login_Controller
 
     public function create(){
 		
-		$lastID	= $this->Lokasi_model->cekLastId();
-		$urut = (empty($lastID->maxs) ? 1 : $lastID->maxs += 1);
-		$newId = 'L'.sprintf("%05s", $urut);
+		
 
 		$data = array(
 			'view' 			=> 'lokasi/lokasi_form',
-			'title' 		=> '<i class="fa fa-plus-square"></i> Tambah Data lokasi',
+			'title' 		=> '<i class="fa fa-plus-square"></i> Tambah Data Aplikasi',
 			'action' 		=> site_url('admin/lokasi/create_action'),
-			'kode_lokasi' 	=> $newId,
+			'kode_lokasi' 	=> set_value('kode_lokasi'),
 			'lokasi' 		=> set_value('lokasi'),
 		);
         $this->load->view('template', $data);
@@ -40,12 +38,10 @@ class lokasi extends Login_Controller
     
     public function create_action(){
 		
-		$lastID	= $this->Lokasi_model->cekLastId();
-		$urut = (empty($lastID->maxs) ? 1 : $lastID->maxs += 1);
-		$newId = 'L'.sprintf("%05s", $urut);
+		
 		
 		$data = array(
-			'kode_lokasi'	=> $newId,
+			'kode_lokasi'	=> $this->input->post('kode_lokasi',TRUE),
 			'lokasi'	=> $this->input->post('lokasi',TRUE),
 		);
 
@@ -73,7 +69,7 @@ class lokasi extends Login_Controller
     
     public function update_action(){
 		
-		$kode_lokasi			= $this->input->post('kode_lokasi', TRUE);
+		$kode_lokasi	= $this->input->post('kode_lokasi', TRUE);
 		
 		$data = array(
 			'lokasi'	=> $this->input->post('lokasi',TRUE),

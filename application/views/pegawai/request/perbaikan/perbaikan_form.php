@@ -8,8 +8,8 @@
     </div>
     <div class="callout callout-warning" style="margin:15px 15px 15px 100px;">											
       <h4><i class="fa fa-arrow-circle-right"></i> Hii, I'm Is Your Help Desk ... </h4>
-      Hallo, saat ini anda sedang melihat daftar perbaikan yang anda lakukan. Untuk mengecek  detail setiap 
-      perbaikan anda <br> silahkan klik lihat progres pada tabel aksi, Salam dan Terimakasih 
+      Hallo, saat ini anda sedang melihat daftar komplain yang anda lakukan. Untuk mengecek  detail setiap 
+      komplain anda <br> silahkan klik lihat progres pada tabel aksi, Salam dan Terimakasih 
     </div>
 </div>
 <!-- quick email widget -->
@@ -18,7 +18,7 @@
         <?php echo $title;?>
         <!-- tools box -->
         <div class="pull-right box-tools">
-		<?php echo anchor(site_url('pegawai/perbaikan'), '<i class="fa fa-th-list" aria-hidden="true"></i> Daftar Perbaikan', array('class'=>'btn btn-xs btn-info tultip','title'=>'Histori Request Perbaikan')); ?>	    
+		<?php echo anchor(site_url('pegawai/perbaikan'), '<i class="fa fa-th-list" aria-hidden="true"></i> Daftar Komplain', array('class'=>'btn btn-xs btn-info tultip','title'=>'Histori Request Perbaikan')); ?>	    
         </div><!-- /. tools -->
     </div>
     <?php echo form_open_multipart($action, array('role'=>'form', 'id'=>'validForm'));?>
@@ -43,7 +43,7 @@
                         <span class="input-group-addon"><i class="fa fa-home"></i></span>
                         <select class="form-control" name="kode_lokasi" required data-bv-trigger="blur" 
                         data-bv-notempty-message="<i class='fa fa-times-circle'></i> Silahkan pilih kategori request">
-                        <option value="">-- Lokasi Perbaikan --</option>
+                        <option value="">-- Aplikasi --</option>
                         <?php
                             foreach($lokasi as $rowLokasi):
                             $selectedKdLokasi= ($kode_lokasi== $rowLokasi->kode_lokasi ? 'selected':' ');

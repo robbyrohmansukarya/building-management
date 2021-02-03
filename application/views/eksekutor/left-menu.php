@@ -37,29 +37,12 @@
       </a>
     </li>
 
-    <li class="treeview <?php echo $active_ruangan;?>">
-      <a href="#">
-        <i class="fa fa-circle-o text-yellow"></i>
-        <span>Ruang Rapat</span><i class="fa fa-angle-left pull-right"></i></i>
-      </a>
-      <ul class="treeview-menu">
-        <li>
-		<?php 
-			echo anchor('eksekutor/ruangan/master/data-master-ruangan','<i class="fa fa-home"></i> <span>Data Ruangan</span>');?>
-        </li>
-        <li>
-		<?php
-          $newFwd = $this->db->query("select baca_eksekutor from request_ruangan_forward where ideksekutor='".$ideksekutor."' and baca_eksekutor = 0")->num_rows();		 
-			echo anchor('eksekutor/ruangan','<i class="fa fa-th-list"></i> <span>Daftar Booking</span>'.($newFwd > 0 ? '<small class="label pull-right bg-yellow">'.$newFwd.' new <i class="fa fa-envelope-o"></i></small>':' '));
-		?>
-        </li>
-      </ul>
-    </li>
+    
 
     <li class="treeview <?php echo $active_perbaikan;?>">
       <a href="#">
         <i class="fa fa-circle-o text-red"></i>
-        <span>Perbaikan</span> <i class="fa fa-angle-left pull-right"></i></i>
+        <span>Komplain</span> <i class="fa fa-angle-left pull-right"></i></i>
       </a>
       <ul class="treeview-menu">
         <li>

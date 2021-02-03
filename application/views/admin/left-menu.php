@@ -39,13 +39,13 @@
       </a>
     </li>
     
-    <li class="treeview <?php echo $active_ruangan;?>">
+    <!-- <li class="treeview <?php echo $active_ruangan;?>">
     	<?php
           $newBooking = $this->db->query("select * from request_ruangan where sts_baca_admin = 0 group by id_request")->num_rows();        
 		?>	
       <a href="#">
         <i class="fa fa-circle-o text-yellow"></i>
-        <span>Ruang Rapat &nbsp;<?php echo ($newBooking > 0 ? '<small class="label bg-yellow">New '.$newBooking.' <i class="fa fa-envelope-o"></i></small>':' ');?></span><i class="fa fa-angle-left pull-right"></i></i>
+        <span>Format Komplain 1 &nbsp;<?php echo ($newBooking > 0 ? '<small class="label bg-yellow">New '.$newBooking.' <i class="fa fa-envelope-o"></i></small>':' ');?></span><i class="fa fa-angle-left pull-right"></i></i>
       </a>
       <ul class="treeview-menu">
         <li>
@@ -57,12 +57,12 @@
         <li><?php echo anchor('admin/ruangan/status_eksekutor','<i class="fa fa-angle-right"></i> <span>Status Eksekutor</span>');?></li>
         <li><?php echo anchor('admin/excel_ruangan/export','<i class="fa fa-angle-right"></i> <span>Unduh Laporan</span>');?></li>
       </ul>
-    </li>
+    </li> -->
 
     <li class="treeview <?php echo $active_perbaikan;?>">
       <a href="#">
         <i class="fa fa-circle-o text-red"></i>
-        <span>Perbaikan</span><i class="fa fa-angle-left pull-right"></i></i>
+        <span>Komplain</span><i class="fa fa-angle-left pull-right"></i></i>
       </a>
       <ul class="treeview-menu">
         <li>
@@ -76,7 +76,7 @@
       </ul>
     </li>
 
-    <li class="treeview <?php echo $active_barang;?>">
+    <!-- <li class="treeview <?php echo $active_barang;?>">
       <a href="#">
         <i class="fa fa-circle-o text-aqua"></i>
         <span>Peminjaman</span><i class="fa fa-angle-left pull-right"></i></i>
@@ -92,23 +92,22 @@
         <li><?php echo anchor('admin/barang/tracking','<i class="fa fa-angle-right"></i> <span>Pelacakan</span>');?></li>
         <li><?php echo anchor('admin/excel_barang/export','<i class="fa fa-angle-right"></i> <span>Unduh Laporan</span>');?></li>
       </ul>
-    </li>
+    </li> -->
     
     </li>
     
     <li class="treeview <?php echo $active_master;?>">
       <a href="#">
         <i class="fa fa-gears"></i>
-        <span>Data Utama</span><i class="fa fa-angle-left pull-right"></i>
+        <span>Master Data</span><i class="fa fa-angle-left pull-right"></i>
       </a>
       <ul class="treeview-menu">
         <li><?php echo anchor('admin/admin/daftar','<i class="fa fa-angle-right"></i> <span>Admin</span>');?></li>
-        <li><?php echo anchor('admin/pegawai','<i class="fa fa-angle-right"></i> <span>Pegawai</span>');?></li>
-        <li><?php echo anchor('admin/eksekutor','<i class="fa fa-angle-right"></i> Eksekutor');?></li>
+        <li><?php echo anchor('admin/pegawai','<i class="fa fa-angle-right"></i> <span>User</span>');?></li>
+        <li><?php echo anchor('admin/eksekutor','<i class="fa fa-angle-right"></i> Solver');?></li>
         
-        <li><?php echo anchor('admin/barang','<i class="fa fa-angle-right"></i> Barang');?></li>
-        <li><?php echo anchor('admin/ruangan','<i class="fa fa-angle-right"></i> Ruangan');?></li>
-        <li><?php echo anchor('admin/lokasi','<i class="fa fa-angle-right"></i> Lokasi');?></li>
+        
+        <li><?php echo anchor('admin/lokasi','<i class="fa fa-angle-right"></i> Aplikasi');?></li>
       </ul>
     </li>
     <li>

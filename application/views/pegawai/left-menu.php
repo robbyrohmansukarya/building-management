@@ -47,18 +47,18 @@
     <li class="treeview <?php echo $active_perbaikan;?>">
       <a href="#">
         <i class="fa fa-circle-o text-red"></i>
-        <span>Perbaikan</span><i class="fa fa-angle-left pull-right"></i>
+        <span>komplain</span><i class="fa fa-angle-left pull-right"></i>
       </a>
       <ul class="treeview-menu">
         <li>
           <?php 
             //echo anchor('pegawai/perbaikan/create','<i class="fa fa-edit"></i> <span>Input Perbaikan</span>');
-            echo anchor('pegawai/perbaikan/help','<i class="fa fa-edit"></i> <span>Input Perbaikan</span>');
+            echo anchor('pegawai/perbaikan/help','<i class="fa fa-edit"></i> <span>Input Komplain</span>');
           ?>    
         </li>
         <li>
           <?php 
-            echo anchor('pegawai/perbaikan','<i class="fa fa-th-list"></i> <span>Daftar Perbaikan</span>');
+            echo anchor('pegawai/perbaikan','<i class="fa fa-th-list"></i> <span>Daftar Komplain</span>');
           ?>
         </li>
         <li>
@@ -69,12 +69,12 @@
         </li>
         <li>
           <?php 
-            echo anchor('pegawai/perbaikan','<i class="fa fa-folder-open-o"></i> <span>Histori Perbaikan</span>');
+            echo anchor('pegawai/perbaikan','<i class="fa fa-folder-open-o"></i> <span>Histori Komplain</span>');
           ?>
         </li>
       </ul>
     </li>
-    <li class="treeview <?php echo $active_ruangan;?>">
+    <!-- <li class="treeview <?php echo $active_ruangan;?>">
       <a href="#">
         <i class="fa fa-circle-o text-yellow"></i>
         <span>Ruang Rapat</span><i class="fa fa-angle-left pull-right"></i>
@@ -108,7 +108,7 @@
 		?>
         </li>
       </ul>
-    </li>
+    </li> -->
     <li>
 		<?php 
 			echo anchor('pegawai/feedback', '<i class="fa fa-comments-o text-green"></i> <span>Feed Back</span>', array('class'=>''));

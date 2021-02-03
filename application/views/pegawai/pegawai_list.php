@@ -14,7 +14,7 @@
             <thead class="bg-default">
                 <tr>
                     <th width="30">No</th>
-                    <th width="50">ID Pengguna</th>
+                    <th width="50">IP Komputer</th>
                     <th>Nama Lengkap</th>
                     <th>No Telp</th>
                     <th>Email</th>
@@ -29,7 +29,7 @@
             ?>
                 <tr>
                     <td><?php echo ++$start;?></td>
-                    <td><?php echo $pegawai->idpengguna;?></td>
+                    <td><?php echo $pegawai->jabatan;?></td>
                     <td><?php echo ucwords($pegawai->nama_lengkap); ?></td>
                     <td><?php echo $pegawai->no_telp;?></td>
                     <td>

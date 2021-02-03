@@ -65,7 +65,7 @@
                         <h4><strong><?php echo $request;?></strong></h4>
                         <?php echo $deskripsi_request;?>
                         <br /><br />
-                        <?php echo '<i class="fa fa-map-marker"></i> Lokasi: '.$lokasi;?>                                       
+                        <?php echo '<i class="fa fa-map-marker"></i> Aplikasi: '.$lokasi;?>                                       
                         <br />
                         <i class="fa fa-picture-o"></i> Gambar / Foto Lampiran :
                         <?php 

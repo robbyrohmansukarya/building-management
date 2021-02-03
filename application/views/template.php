@@ -3,7 +3,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Sisem Informasi Logistik</title>
+    <title>Sisem Komplain Online</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
 
     <link rel="shortcut icon" href="<?php echo base_url();?>assets/dist/img/bi_logo.png">
@@ -96,9 +96,9 @@
     
     <footer class="main-footer">
       <div class="pull-right hidden-xs">
-        <b>Andromeda</b> 1.2
+        <b>Komplain Online</b> 1.2
       </div>
-      <strong>Copyright &copy; 2020 <a href="<?php echo base_url().$level.'dashboard';?>">Bank Indonesia</a>.</strong> All rights reserved.
+      <strong>Copyright &copy; 2021 <a href="<?php echo base_url().$level.'dashboard';?>">Rajawali Hiyoto</a>.</strong> All rights reserved.
     </footer>
 
     </div>

@@ -98,9 +98,9 @@
     
     <footer class="main-footer">
       <div class="pull-right hidden-xs">
-        <b>Andromeda</b> 1.2
+        <b>KOmplain Online</b> 1.2
       </div>
-      <strong>Copyright &copy; 2020 <a href="<?php echo base_url().$level.'dashboard';?>">Bank Indonesia</a>.</strong> All rights reserved.
+      <strong>Copyright &copy; 2021 <a href="<?php echo base_url().$level.'dashboard';?>">Rajawali Hiyoto</a>.</strong> All rights reserved.
     </footer>
 
     </div>

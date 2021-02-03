@@ -7,13 +7,13 @@
     </div>
   <div class="callout callout-warning" style="margin:15px 0px 15px 100px;">											
       <h4><i class="fa fa-arrow-circle-right"></i> Tentang Aplikasi</h4>
-Hallo Eksekutor, Saat ini anda sedang melihat tabel permintaan perbaikan, cek status perbaikan untuk melihat apakah perbaikan tersebut sedang ditangani atau belum. 
+Hallo Solver, Saat ini anda sedang melihat tabel permintaan komplain, cek status untuk melihat apakah komplain tersebut sedang ditangani atau belum. 
 Jika belum ditangani silahkan klik update status untuk penanganan. Salam & Terimakasih      </div>
 </div>
 
 <div class="box box-warning color-palette-box" style="margin-top:25px">
 	<div class="box-header with-border">
-	  <h3 class="box-title"><i class="fa fa-envelope-o" ></i> List Request Perbaikan</h3>
+	  <h3 class="box-title"><i class="fa fa-envelope-o" ></i> List Request Komplain</h3>
 	</div>
     
 	<div class="box-body table-responsive">
@@ -23,7 +23,7 @@ Jika belum ditangani silahkan klik update status untuk penanganan. Salam & Terim
                     <th width="20">No</th>
                     <th width="100"><i class="fa fa-calendar"></i> Tanggal Request</th>
                     <th><i class="fa fa-user"></i> Pegawai</th>
-                    <th width="200"><i class="fa fa-user-md"></i> Jabatan</th>
+                    <th width="200"><i class="fa fa-user-md"></i> IP Komputer</th>
                     <th width="150"><i class="fa fa-tags"></i> Klasifikasi</th>
                     <th width="100"><i class="fa fa-exclamation-circle"></i> Status </th>
                     <th width="100"><i class="fa fa-arrows-alt"></i> Aksi</th>

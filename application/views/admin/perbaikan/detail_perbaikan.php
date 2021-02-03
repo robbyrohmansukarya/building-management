@@ -5,14 +5,14 @@
     <div class="callout callout-warning" style="margin:15px 15px 15px 100px;">											
       <h4><i class="fa fa-arrow-circle-right"></i> Hii, I'm Is Your Help Desk ... </h4>
     
-      Hallo Operator, Berikut merupakan konten untuk deteil permintan perbaikan dari pegawai untuk di teruskan ke eksekutor tertentu sesuai dengan kerusakannya <br>
+      Hallo Operator, Berikut merupakan konten untuk deteil permintan komplain dari user untuk di teruskan ke Solver tertentu sesuai dengan kerusakannya <br>
       Namun sebelumnya Anda harus melakukan eksekusi estimasi pekerjaan terlebih dahulu dan pilih tingkat Urgensi nya. Salam & Terimakasih
     </div>
 </div>
 
 <div class="box box-warning color-palette-box" style="margin-top:15px">
 	<div class="box-header with-border">
-	  <h3 class="box-title"><i class="fa fa-edit"></i> Detail Request Perbaikan</h3>
+	  <h3 class="box-title"><i class="fa fa-edit"></i> Detail Request Komplain</h3>
 	</div>
 	<div class="box-body">
         <ul class="timeline">
@@ -80,9 +80,9 @@
                         <?php 
                         if($kode_lokasi != ''){
                             $lokasi = $this->Lokasi_model->get_by_id($kode_lokasi);
-                            echo '<i class="fa fa-map-marker"></i> Lokasi: '. '<strong>'.ucfirst($lokasi->lokasi).'</strong>';
+                            echo ' Aplikasi: '. '<strong>'.ucfirst($lokasi->lokasi).'</strong>';
                         }else{
-                            echo '<i class="fa fa-map-marker"></i> Lokasi: -';
+                            echo ' Aplikasi: -';
                         }
                         ?>      
                                        
@@ -122,7 +122,7 @@
                             <div class="form-group col-md-6 col-xs-12">
                                 <select class="form-control" name="ideksekutor" required data-bv-trigger="blur" 
                                 data-bv-notempty-message="<i class='fa fa-times-circle'></i> Silahkan pilih eksekutor">
-                                    <option value="">Pilih Eksekutor</option>
+                                    <option value="">Pilih Solver</option>
                                     <?php
 									foreach($eksekutors as $row_eksekutor):
 									?>

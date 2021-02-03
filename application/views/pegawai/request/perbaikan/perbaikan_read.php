@@ -1,6 +1,6 @@
 <div class="box box-warning color-palette-box" style="margin-top:15px;">
     <div class="box-header with-border">
-        <h3 class="box-title"><i class="fa fa-edit"></i> Detail Komplen Perbaikan</h3>
+        <h3 class="box-title"><i class="fa fa-edit"></i> Detail Komplain</h3>
         <div class="box-tools pull-right">
 			<?php echo anchor(site_url('pegawai/perbaikan'), '<< Kembali ', array('class'=>'text-warning tultip','title'=>'Kembali ke halaman sebelumnya')); ?>
         </div>

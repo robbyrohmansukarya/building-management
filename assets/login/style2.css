@@ -24,7 +24,7 @@ a{color:inherit;text-decoration:none}
 	height:100%;
 	position:absolute;
 	padding:127px 70px 124px 52px;
-    background-color : rgba(48, 58, 105, 0.9);
+    background-color : rgba(161, 32, 32, 0.9);
 }
 
 
@@ -171,4 +171,5 @@ a{color:inherit;text-decoration:none}
 }
 .foot-lnk{
 	text-align:center;
+	color: #fff;
 }

@@ -36,7 +36,8 @@
                             <td>
 							<?php 
 								$klasifikasi = $this->Perbaikan_model->get_detail('klasifikasi_request', 'id_klasifikasi', $id_klasifikasi);
-								echo $klasifikasi->klasifikasi;
+                                echo $klasifikasi->klasifikasi;
+                                
 							?>
                             </td>
                         </tr>
@@ -60,13 +61,16 @@
                             <td>Lokasi</td>
                             <td>
                             <?php 
-                                if($kode_lokasi != ''){
+                            
+                                if($kode_lokasi != null){
                                     $lokasi = $this->Lokasi_model->get_by_id($kode_lokasi);
-                                    echo '<i class="fa fa-map-marker"></i> Lokasi: '. '<strong>'.ucfirst($lokasi->lokasi).'</strong>';
+                                    echo ucfirst($lokasi->lokasi).'</strong>';
+                                    
                                 }else{
-                                    echo '<i class="fa fa-map-marker"></i> Lokasi: -';
+                                    echo ' -';
                                 }
                             ?>      
+                            
                             </td>
                         </tr>
                         <tr>
@@ -79,7 +83,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Eksekutor</td>
+                            <td>Solver</td>
                             <td>
 							<?php 
 								$eksekutor = $this->Perbaikan_model->get_detail('eksekutor', 'idpengguna', $ideksekutor);					
@@ -111,9 +115,8 @@
                     <th width="200"><i class="fa fa-wrench"></i> Status</th>
                     <th width="100"><i class="fa fa-calendar"></i> Eksekusi</th>
                     <th width=""><i class="fa fa-thumb-tack"></i> Progres</th>
-                    <th width="200"><i class="fa fa-money"></i> Biaya (Rp.)</th>
-                    <th width="100"><i class="fa fa-picture-o"></i> Lokasi</th>
-                    <th width="100"><i class="fa fa-picture-o"></i> Progres</th>
+                    <th width="100"><i class="fa fa-picture-o"></i>pengerjaan</th>
+                    
                 </tr>
             </thead>
             <tbody>
@@ -147,17 +150,13 @@
 					?>
                     </td>
                     <td><?php echo ucwords($row->progres);?></td>
-                    <td><?php echo $row->biaya;?></td>
+                    
                     <td>
 					<?php 
 						echo ($row->foto_lokasi == '' ? 'No Picture' : anchor('pegawai/perbaikan/photo_progres/lokasi/'.$row->id.'/'.$id_request.'/foto-lokasi','<i class="fa fa-picture-o"></i> Link Pic', array('class'=>'tultip','title'=>'Klik untuk melihat foto lokasi')));
 					?>
                     </td>
-                    <td>
-					<?php 
-						echo ($row->foto_progres == '' ? 'No Picture' : anchor('pegawai/perbaikan/photo_progres/progres/'.$row->id.'/'.$id_request.'/foto-progres','<i class="fa fa-picture-o"></i> Link Pic', array('class'=>'tultip','title'=>'Klik untuk melihat foto lokasi')));
-					?>
-                    </td>
+                    
                 </tr>
 			<?php    
                 endforeach;

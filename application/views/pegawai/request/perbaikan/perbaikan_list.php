@@ -8,14 +8,14 @@
     </div>
     <div class="callout callout-warning" style="margin:15px 15px 15px 100px;">											
       <h4><i class="fa fa-arrow-circle-right"></i> Hii, I'm Is Your Help Desk ... </h4>
-      Hallo, saat ini anda sedang melihat daftar perbaikan yang anda input 
+      Hallo, saat ini anda sedang melihat daftar komplain yang anda input 
       <br>klik detail pada aksi untuk melihat informasi selengkapnya. Salam dan Terimakasih 
     </div>
 </div>
 
 <div class="box box-warning color-palette-box" style="margin-top:15px">
 	<div class="box-header with-border">
-	  <h3 class="box-title"><i class="fa fa-th-list"></i> List Request Perbaikan</h3>
+	  <h3 class="box-title"><i class="fa fa-th-list"></i> List Request Komplain</h3>
 	  <div class="box-tools pull-right">              
 		<?php echo anchor(site_url('pegawai/perbaikan/create'), '<i class="fa fa-plus-circle" aria-hidden="true"></i> Input Perbaikan', array('class'=>'btn btn-xs btn-info tultip','title'=>'Tambah data baru')); ?>	    
 	  </div>
@@ -26,7 +26,7 @@
 				<tr>
                     <th width="30">No</th>
                     <th width="100">Tanggal Request</th>
-                    <th>Nama Perbaikan</th>
+                    <th>Nama komplain</th>
                     <th>Lokasi Perbaikan</th>
                     <th width="150">Status</th>
                     <th width="50">Action</th>

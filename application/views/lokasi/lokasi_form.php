@@ -17,7 +17,7 @@
                 <div class="form-group">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="fa fa-bookmark"></i></span>
-                        <input type="text" class="form-control" name="kode_lokasi" id="kode_lokasi" placeholder="<?php echo $kode_lokasi;?>" disabled  />
+                        <input type="text" class="form-control" name="kode_lokasi"  placeholder="IP Aplikasi" value="<?php echo $kode_lokasi;?>"  />
                     </div>
                 </div>
             </div>
@@ -28,14 +28,14 @@
                 <div class="form-group">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="fa fa-edit"></i></span>
-                        <input type="text" class="form-control" name="lokasi" id="lokasi" placeholder="Nama lokasi" value="<?php echo $lokasi; ?>"
+                        <input type="text" class="form-control" name="lokasi" id="lokasi" placeholder="Nama Aplikasi" value="<?php echo $lokasi; ?>"
                          required data-bv-trigger="blur" data-bv-notempty-message="<i class='fa fa-times-circle'></i> nama lokasi harus diisi" />
                     </div>
                 </div>
             </div>
         </div>
                               
-        <input type="hidden" name="kode_lokasi" value="<?php echo $kode_lokasi; ?>" /> 
+        
         <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> Simpan</button> 
         <a href="<?php echo site_url('admin/lokasi') ?>" class="btn btn-warning"><i class="fa fa-repeat"></i> Batal</a>
     <?php echo form_close();?>

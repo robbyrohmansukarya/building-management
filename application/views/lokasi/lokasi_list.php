@@ -2,7 +2,7 @@
 
 <div class="box box-warning color-palette-box" style="margin-top:15px">
 	<div class="box-header with-border">
-        <h3 class="box-title"><i class="fa fa-th-list"></i> Daftar Lokasi</h3>
+        <h3 class="box-title"><i class="fa fa-th-list"></i> Daftar Aplikasi</h3>
         <div class="box-tools pull-right">              
 			<?php echo anchor(site_url('admin/lokasi/create'), '<i class="fa fa-plus-square" aria-hidden="true"></i> Add', array('class'=>'btn btn-xs btn-info tultip','title'=>'tambah data baru')); ?>
         </div>
@@ -14,8 +14,8 @@
             <thead class="bg-default">
                 <tr>
                     <th width="30">No</th>
-                    <th width="50">Kode Lokasi</th>
-                    <th>Nama Lokasi</th>
+                    <th width="50">IP Aplikasi</th>
+                    <th>Nama Aplikasi</th>
                     <th width="50">Action</th>
                 </tr>
             </thead>
@@ -34,7 +34,7 @@
                     echo '&nbsp;&nbsp; | &nbsp;&nbsp;'; 
                     echo anchor(site_url('admin/lokasi/update/'.$row->kode_lokasi),'<i class="fa fa-edit text-warning"></i>', array('class'=>'tultip','title'=>'edit data')); 
                     echo '&nbsp;&nbsp; | &nbsp;&nbsp;'; 
-                    echo anchor(site_url('admin/lokasi/delete/'.$row->kode_lokasi),'<i class="fa fa-trash-o text-danger"></i>', array('class'=>'tultip','title'=>'hapus data','onclick'=>'javasciprt: return confirm(\'Data lokasi ini akan dihapus, Lanjutkan ?\')')); 
+                    echo anchor(site_url('admin/lokasi/delete/'.$row->kode_lokasi),'<i class="fa fa-trash-o text-danger"></i>', array('class'=>'tultip','title'=>'hapus data','onclick'=>'javasciprt: return confirm(\'Data aplikasi ini akan dihapus, Lanjutkan ?\')')); 
                     ?>
                     </td>
                 </tr>

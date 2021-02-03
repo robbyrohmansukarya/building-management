@@ -21,13 +21,16 @@ class Lokasi_model extends CI_Model{
     // get all
     function get_all(){
         $this->db->order_by($this->id, $this->order);
-        return $this->db->get($this->table)->result();
+
+        return $this->db->get($this->table)->result();  
     }
     // get data by id
     function get_by_id($id){
         $this->db->where($this->id, $id);
         return $this->db->get($this->table)->row();
+        // return $this->db->get_where($table, $data)->row();
     }
+    
 
     // insert data
     function insert($data){
@@ -38,6 +41,7 @@ class Lokasi_model extends CI_Model{
     function update($id, $data){
         $this->db->where($this->id, $id);
         $this->db->update($this->table, $data);
+        
     }
     // delete data
     function delete($id){

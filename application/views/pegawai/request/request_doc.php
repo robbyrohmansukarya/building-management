@@ -26,9 +26,9 @@
 		<th>Request</th>
 		<th>Deskripsi Request</th>
 		<th>Baca Admin</th>
-		<th>Baca Eksekutor</th>
+		<th>Baca Solver</th>
 		<th>Sts Baca Admin</th>
-		<th>Sts Baca Eksekutor</th>
+		<th>Sts Baca Solver</th>
 		<th>Sts Eksekusi</th>
 		
             </tr><?php

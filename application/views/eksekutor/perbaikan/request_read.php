@@ -25,7 +25,7 @@ if($sukses =='delete'){
     </div>
   <div class="callout callout-warning" style="margin:15px 0px 15px 100px;">											
       <h4><i class="fa fa-arrow-circle-right"></i> Tentang Aplikasi</h4>
-Hallo Eksekutor , Saat ini anda sedang melihat detail permintaan perbaikan. 
+Hallo Solver , Saat ini anda sedang melihat detail permintaan komplain. 
   Silahkan lakukan input progress pekerjaan pada form aksi dan lihat hasil input progress pekerjaan anda di daftar progress
   </div>
 </div>
@@ -128,14 +128,14 @@ Hallo Eksekutor , Saat ini anda sedang melihat detail permintaan perbaikan.
                             </td>
                         </tr>
                         <tr>
-                            <td>Lokasi</td>
+                            <td>Aplikasi</td>
                             <td>
                             <?php 
                                 if($kode_lokasi != ''){
                                     $lokasi = $this->Lokasi_model->get_by_id($kode_lokasi);
-                                    echo '<i class="fa fa-map-marker"></i> Lokasi: '. '<strong>'.ucfirst($lokasi->lokasi).'</strong>';
+                                    echo ' Aplikasi: '. '<strong>'.ucfirst($lokasi->lokasi).'</strong>';
                                 }else{
-                                    echo '<i class="fa fa-map-marker"></i> Lokasi: -';
+                                    echo ' Aplikasi: -';
                                 }
                             ?>      
                             </td>
@@ -181,15 +181,15 @@ Hallo Eksekutor , Saat ini anda sedang melihat detail permintaan perbaikan.
                     </div><!-- /.input group -->
                 </div><!-- /.form group -->
                 <div class="form-group">
-                    <p style="margin-bottom:0px; "><label>Posting Lokasi (survey)</label></p>
+                    <p style="margin-bottom:0px; "><label>Posting pengerjaan</label></p>
                     <div class="btn btn-default btn-file">
                       <i class="fa fa-picture-o"></i> Upload Foto
                       <input type="file" name="photo_lokasi" />
                     </div>  
-                    <p class="help-block"><code>*Kosongkan jika tidak ada foto lokasi yang dapat dilampirkan</code></p>
+                    <p class="help-block"><code>*Kosongkan jika tidak ada foto yang dapat dilampirkan</code></p>
                 </div><!-- /.form group -->
                 <div class="form-group">
-                    <label>Input Progres:</label>
+                    <label>Spek Teknis:</label>
                     <div class="input-group">
                       <div class="input-group-addon">
                         <i class="fa fa-thumb-tack"></i>
@@ -199,22 +199,10 @@ Hallo Eksekutor , Saat ini anda sedang melihat detail permintaan perbaikan.
                     </div><!-- /.input group -->
                 </div><!-- /.form group -->
                 <div class="form-group">
-                    <p style="margin-bottom:0px; "><label>Posting Progres</label></p>                   
-                    <div class="btn btn-default btn-file">
-                      <i class="fa fa-picture-o"></i> Upload Foto
-                      <input type="file" name="photo_progres" />
-                    </div>
-                    <p class="help-block"><code>*Kosongkan jika tidak ada foto progres yang dapat dilampirkan</code></p>
+                    
+                    
                 </div><!-- /.form group -->
-                <div class="form-group">
-                    <label>Input Total Biaya (Rp):</label>
-                    <div class="input-group">
-                      <div class="input-group-addon">
-                        <i class="fa fa-money"></i>
-                      </div>
-                      <input type="number" name="biaya" class="form-control pull-right" id="biaya"/>
-                    </div><!-- /.input group -->
-                </div><!-- /.form group -->
+                
             </div><!-- //col-box-body-->
             <div class="box-footer clearfix">
                 <input type="hidden" name="id_request" value="<?php echo $id_request; ?>" /> 
@@ -239,8 +227,7 @@ Hallo Eksekutor , Saat ini anda sedang melihat detail permintaan perbaikan.
                 <tr>
                     <th width="20">No</th>
                     <th width="200"><i class="fa fa-wrench"></i> Status</th>
-                    <th width=""><i class="fa fa-thumb-tack"></i> Progres</th>
-                    <th width="200"><i class="fa fa-money"></i> Total Biaya</th>
+                    <th width=""><i class="fa fa-thumb-tack"></i> Spek Teknis</th>
                     <th width="100"><i class="fa fa-arrows-alt"></i> Aksi</th>
                 </tr>
             </thead>
@@ -266,7 +253,6 @@ Hallo Eksekutor , Saat ini anda sedang melihat detail permintaan perbaikan.
                     ?>
                     </td>
                     <td><?php echo ucwords($row->progres);?></td>
-                    <td><?php echo $row->biaya;?></td>
                     <td>
                     <?php
 						echo anchor(site_url('eksekutor/perbaikan/delete_progres/'.$row->id.'/'.$id_request.'/delete-progres'),'<i class="fa fa-trash-o text-danger"></i> Delete', array('class'=>'tultip text-danger','title'=>'hapus data','onclick'=>'javasciprt: return confirm(\'Apakah anda yakin menghapus data ini ?\')')); 

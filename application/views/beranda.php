@@ -2,7 +2,7 @@
 <section class="content-header">
     <h1>
         Welcome back
-        <small>Pudyasto Adi Wibowo</small>
+        <small>Robby Rohman Sukarya</small>
     </h1>
 </section>
 

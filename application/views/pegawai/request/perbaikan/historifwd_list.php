@@ -4,7 +4,7 @@
     </div>
     <div class="callout callout-warning" style="margin:15px 15px 15px 100px;">											
       <h4><i class="fa fa-arrow-circle-right"></i> Hii, I'm Is Your Help Desk ... </h4>
-      Hallo, saat ini anda sedang melihat daftar kemjuan perbaikan yang anda input 
+      Hallo, saat ini anda sedang melihat daftar kemajuan komplain yang anda input 
       <br>klik icon progress pada aksi untuk melihat informasi selengkapnya. Salam dan Terimakasih 
     </div>
 </div>
@@ -28,7 +28,7 @@
                     <th width="100"><i class="fa fa-calendar"></i> Tanggal</th>
                     <th width="100"><i class="fa fa-tags"></i> Klasifikasi</th>
                     <th><i class="fa fa-exclamation-circle"></i> Status </th>
-                    <th><i class="fa fa-gears"></i> Eksekutor</th>
+                    <th><i class="fa fa-gears"></i> Solver</th>
                     <th width="100"><i class="fa fa-arrows-alt"></i> Aksi</th>
                 </tr>
             </thead>
@@ -69,7 +69,7 @@
                     <td>
 					<?php 
 						$eksekutor = $this->Perbaikan_model->get_detail('eksekutor', 'idpengguna', $row->ideksekutor);					
-						echo $eksekutor->unit;
+						echo $eksekutor->nama_lengkap;
 					?>
                     </td>
                     <td>

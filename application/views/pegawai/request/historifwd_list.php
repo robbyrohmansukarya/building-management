@@ -20,10 +20,10 @@
                     <th width="20">No</th>
                     <th width="100"><i class="fa fa-bookmark"></i> ID Request</th>
                     <th width="100"><i class="fa fa-calendar"></i> Tanggal</th>
-                    <th width="200"><i class="fa fa-user"></i> Pegawai</th>
+                    <th width="200"><i class="fa fa-user"></i> User</th>
                     <th width="100"><i class="fa fa-tags"></i> Klasifikasi</th>
                     <th><i class="fa fa-exclamation-circle"></i> Status </th>
-                    <th><i class="fa fa-gears"></i> Eksekutor</th>
+                    <th><i class="fa fa-gears"></i> Solver</th>
                     <th width="100"><i class="fa fa-arrows-alt"></i> Aksi</th>
                 </tr>
             </thead>

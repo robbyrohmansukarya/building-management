@@ -4,7 +4,7 @@
 
 <div class="box box-warning color-palette-box" style="margin-top:15px">
 	<div class="box-header with-border">
-	  <h3 class="box-title"><i class="fa fa-th-list"></i> Daftar Eksekutor</h3>
+	  <h3 class="box-title"><i class="fa fa-th-list"></i> Daftar Solver</h3>
 	  <div class="box-tools pull-right">              
 		<?php echo anchor(site_url('admin/eksekutor/create'), '<i class="fa fa-plus-square" aria-hidden="true"></i> Add', array('class'=>'btn btn-xs btn-info tultip','title'=>'tambah data baru')); ?>
 	  </div>
@@ -16,7 +16,7 @@
             <thead class="bg-default">
                 <tr>
                     <th width="30">No</th>
-                    <th width="100">ID Eksekutor</th>
+                    <th width="100">ID Solver</th>
                     <th>Nama Lengkap</th>
                     <th>Bidang Kerja</th>
                     <th>No Telp</th>

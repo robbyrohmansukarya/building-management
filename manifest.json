@@ -1,0 +1,21 @@
+{
+    "name": "MIS Komplain",
+    "short_name": "MIS Komplain",
+    "description": "Aplikasi sistem komplain MIS",
+    "lang": "en-US",
+    "dir": "ltr",
+    "theme_color": "#800000",
+    "start_url": "./",
+    "background_color": "#000",
+    "display": "standalone",
+    "orientation": "portrait-primary",
+    "icons": [{
+      "src": "assets/dist/img/logo.png",
+      "sizes": "72x72",
+      "type": "image/png"
+     }, {
+      "src": "assets/dist/img/logo2.png",
+      "sizes": "512x512",
+      "type": "image/png"
+     }]
+   }

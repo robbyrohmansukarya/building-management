@@ -5,14 +5,14 @@
     <div class="callout callout-warning" style="margin:15px 15px 15px 100px;">											
       <h4><i class="fa fa-arrow-circle-right"></i> Hii, I'm Is Your Help Desk ... </h4>
     
-      Hallo Operator, Berikut saya tampilkan beberapa daftar permintaan perbaikan yang mungkin belum Anda lihat , <br> 
+      Hallo Operator, Berikut saya tampilkan beberapa daftar permintaan Komplain yang mungkin belum Anda lihat , <br> 
       silahkan cek detail informasinya denngan mengklik nama atau aksi forward. Salam & Terimakasih
     </div>
 </div>
 
 <div class="box box-warning color-palette-box" style="margin-top:15px">
 	<div class="box-header with-border">
-	  <h3 class="box-title"><i class="fa fa-th-list"></i> List Request Perbaikan</h3>
+	  <h3 class="box-title"><i class="fa fa-th-list"></i> List Request Komplain</h3>
 	</div>
 	<div class="box-body table-responsive">
         <table class="table table-bordered table-striped display responsive nowrap" id="mytable" cellspacing="0" width="100%">
@@ -20,9 +20,9 @@
 				<tr>
                     <th width="30">No</th>
                     <th width="100">User Request</th>
-                    <th>Jabatan</th>
+                    <th>IP komputer</th>
                     <th width="100">Tanggal Request</th>
-                    <th>Nama Perbaikan</th>
+                    <th>Nama Komplain</th>
                     <th width="150">Status</th>
                     <th width="120">Action</th>
                 </tr>

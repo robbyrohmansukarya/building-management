@@ -5,8 +5,8 @@
     <div class="callout callout-warning" style="margin:15px 15px 15px 100px;">											
       <h4><i class="fa fa-arrow-circle-right"></i> Hii, I'm Is Your Help Desk ... </h4>
     
-      Hallo Operator, Berikut merupakan konten untuk melihat status progress perbaikan yang dilakukan oleh eksekutor <br>
-      Lihatlah pada sub-koten daftar progress untuk melakukan monitoring perbaikan yang dilakukan oleh eksekutor, Anda juga bisa melihat foto kemajuan pekernaanya. Salam & Terimakasih
+      Hallo Operator, Berikut merupakan konten untuk melihat status progress Komplain yang dilakukan oleh Solver <br>
+      Lihatlah pada sub-koten daftar progress untuk melakukan monitoring komplain yang dilakukan oleh solver, Anda juga bisa melihat foto kemajuan pengerjaannya. Salam & Terimakasih
     </div>
 </div>
 
@@ -72,14 +72,14 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Lokasi</td>
+                            <td>Aplikasi</td>
                             <td>
                             <?php 
                                 if($kode_lokasi != ''){
                                     $lokasi = $this->Lokasi_model->get_by_id($kode_lokasi);
-                                    echo '<i class="fa fa-map-marker"></i> Lokasi: '. '<strong>'.ucfirst($lokasi->lokasi).'</strong>';
+                                    echo 'Aplikasi: '. '<strong>'.ucfirst($lokasi->lokasi).'</strong>';
                                 }else{
-                                    echo '<i class="fa fa-map-marker"></i> Lokasi: -';
+                                    echo 'Aplikasi: -';
                                 }
                             ?>      
                             </td>
@@ -94,7 +94,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Eksekutor</td>
+                            <td>Solver</td>
                             <td>
 							<?php 
 								$eksekutor = $this->Perbaikan_model->get_detail('eksekutor', 'idpengguna', $ideksekutor);					
@@ -115,7 +115,7 @@
 
 <div class="box box-warning color-palette-box" style="margin-top:15px">
 	<div class="box-header with-border">
-	  <h3 class="box-title"><i class="fa fa-th-list" ></i> Daftar Progres</h3>
+	  <h3 class="box-title"><i class="fa fa-th-list" ></i> Daftar Progress</h3>
         <div class="box-tools pull-right">
             <?php echo anchor(site_url('admin/perbaikan/historifwd'), '<< Kembali', array('class'=>'tultip btn btn-info btn-xs','title'=>'Kembali ke halaman sebelumnya'));?>
         </div>
@@ -129,9 +129,7 @@
                     <th width="200"><i class="fa fa-wrench"></i> Status</th>
                     <th width="100"><i class="fa fa-calendar"></i> Eksekusi</th>
                     <th width=""><i class="fa fa-thumb-tack"></i> Progres</th>
-                    <th width="200"><i class="fa fa-money"></i> Biaya (Rp.)</th>
-                    <th width="100"><i class="fa fa-picture-o"></i> Lokasi</th>
-                    <th width="100"><i class="fa fa-picture-o"></i> Progres</th>
+                    <th width="100"><i class="fa fa-picture-o"></i> Pengerjaan</th>
                 </tr>
             </thead>
             <tbody>
@@ -165,17 +163,12 @@
 					?>
                     </td>
                     <td><?php echo ucwords($row->progres);?></td>
-                    <td><?php echo $row->biaya;?></td>
                     <td>
 					<?php 
 						echo ($row->foto_lokasi == '' ? 'Tidak ada lampiran foto' : anchor('admin/perbaikan/photo_progres/lokasi/'.$row->id.'/'.$id_request.'/foto-lokasi','Link Pic'));
 					?>
                     </td>
-                    <td>
-					<?php 
-						echo ($row->foto_progres == '' ? 'Tidak ada lampiran foto' : anchor('admin/perbaikan/photo_progres/progres/'.$row->id.'/'.$id_request.'/foto-progres','Link Pic'));
-					?>
-                    </td>
+                    
                 </tr>
 			<?php    
                 endforeach;
