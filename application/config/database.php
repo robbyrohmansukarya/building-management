@@ -42,10 +42,10 @@ $active_group = 'default';
 $active_record = TRUE;
 
 //$db['default']['hostname'] = 'localhost';
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'root';
-$db['default']['password'] = '';
-$db['default']['database'] = 'bi-baru';
+$db['default']['hostname'] = 'db4free.net';
+$db['default']['username'] = 'robbyr';
+$db['default']['password'] = 'Potosintesis1';
+$db['default']['database'] = 'eazytrans2';
 $db['default']['dbdriver'] = 'mysqli';
 
 //$db['default']['username'] = 'root';
